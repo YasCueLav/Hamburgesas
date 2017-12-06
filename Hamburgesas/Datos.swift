@@ -23,7 +23,7 @@ class ColeccionDePaises {
 
 class ColeccionDeHamburguesa {
     
-    let hamburguesas : [String] = []
+    let hamburguesas : [String] = ["Burger Joint", "La Xarcutería", "Butcher & Sons", "Cafe Clock", "Umami Burger", "Kiosco", "Flippin' Burgers", "New York Burger", "Barracuda Diner", "La Burguesía", "Burger 54", "Red Burger Society", "Slater's 50/50", "Ferburger", "Avila Burger", "Diablo Burger", "La Vaca Picada", "Meat Liquor", "Minetta Tavern", "Heart Attack Grill"]
     
     func obtenHamburguesa () ->String{
         let b : Int = Int (arc4random())
