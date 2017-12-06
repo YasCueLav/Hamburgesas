@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblPais: UILabel!
     @IBOutlet weak var lblHamburgesa: UILabel!
     
+    let pais = ColeccionDePaises()
+    let hamburgesa = ColeccionDeHamburguesa()
+    let color = Colores()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,28 +30,13 @@ class ViewController: UIViewController {
     @IBAction func CambiarPaisHambu(sender: AnyObject) {
     }
     
-/*
-    a. Una etiqueta para mostrar el nombre del país.
-    
-    b. Otra etiqueta para mostrar el nombre de la hamburguesa.
-    
-    c. Un botón, con la leyenda: “Quiero una hamburguesa!”
-    
-    d. Debes de mostrar los elementos centrados en la interfaz gráfica
-    
-    4. En la clase ViewController: desarrolla lo siguiente:
-    
-    a. Una instancia de la clase ColeccionDePaises.
-    
-    b. Una instancia de la clase ColeccionDeHamburguesas.
-    
-    c. Un @IBoutlet para la etiqueta de país.
-    
-    d. Un @IBoutlet para la etiqueta de hamburguesa.
-    
-    e. Un @IBAction para implementar cambiar de país y de hamburguesa.
-*/
-
-    
+    @IBAction func Cambio() {
+        lblPais.text = pais.obtenerPais()
+        lblHamburgesa.text = hamburgesa.obtenHamburguesa()
+        
+        let colorAleatorio = color.regresaColorAleatorio()
+        view.backgroundColor = colorAleatorio
+        view.tintColor = colorAleatorio
+    }
 }
 

@@ -15,40 +15,22 @@ class ColeccionDePaises {
     let paises : [String] = ["Alemania", "Argentina", "Armenia", "Australia", "Austria", "Bahamas", "Baréin", "Bélgica", "Bolivia", "Brasil", "Mexico", "Canadá", "Catar", "Chile", "China", "Colombia", "Dinamarca", "Ecuador", "Egipto", "India"]
     
     func obtenerPais () ->String{
-        let c : Int = Int (arc4random())
-        let posicion = c % paises.count
-        return paises[posicion]
+        let a : Int = Int (arc4random())
+        let pos = a % paises.count
+        return paises[pos]
     }
 }
-
-/*
-a. class ColeccionDeHamburguesa
-
-b. La clase tiene como atributos un arreglo de hamburguesas de tipo [String], al menos debes contar con 20 hamburguesas al igual que el número de países.
-
-c. La clase define el método: func obtenHamburguesa( )->String, regresa de manera aleatoria una hamburquesa del arreglo, recuerda usar la función de la siguiente manera: Int(arc4random() % x), donde x puede ser el tamaño del arreglo de hamburguesas.
-
-*/
 
 class ColeccionDeHamburguesa {
     
     let hamburguesas : [String] = []
     
     func obtenHamburguesa () ->String{
-        let c : Int = Int (arc4random())
-        let posicion = c % hamburguesas.count
-        return hamburguesas[posicion]
+        let b : Int = Int (arc4random())
+        let posHamb = b % hamburguesas.count
+        return hamburguesas[posHamb]
     }
 }
-
-
-
-
-
-/*
-
-5. Al presionar el botón debes cambiar el país y la hamburguesa que se despliegan en las etiquetas, de manera opcional cambia el color de fondo como se realizo en los videos del módulo 5.
-*/
 
 
 struct Colores {
